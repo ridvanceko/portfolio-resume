@@ -5,9 +5,10 @@
 
 
 <head>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
   <!-- Font Awesome -->
@@ -17,13 +18,13 @@
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
 
-  
+
 
 </head>
 
 <body>
 
-  
+
   <div class="container-nav">
     <ul class="nav justify-content-end">
       <li class="nav-item">
@@ -45,32 +46,49 @@
 
   <section id="about">
 
-  <h1>Hello, I'm Ridvan Cekmez<br> -Web Developer-</h1>
+    <h1>Hello, I'm Ridvan Cekmez<br> -Web Developer-</h1>
+
+  </section>
+
+  <div id="resume-works">
+    <section id="works">
+
+      <h2>These are my projects</h2>
+<div class="hover01 column">
+  <div>
+      <a href="https://ridvanceko.github.io/TriviaGame/" target="_blank">
+        <figure><img src="assets/images/my-works.jpg" width="300" height="300"></figure>
+        <span>Trivia-Game</span>
+      </a>
+      
+    </div>
+    <div>
+
+
+      <a href="https://ridvanceko.github.io/GIPHY/" target="_blank">
+      <figure> <img src="assets/images/giphy.png" width="300" height="300"></figure> <span>GIPHY</span></a>
+      </div>
+
+
+<div>
+     
+      <a href="https://ridvanceko.github.io/unit-4-game/" target="_blank"> <figure> <img src="assets/images/crystal.jpg" width="300" height="300"> </figure><span>Crystal Collector</span></a>
+
+    </div>
+    </div>
+
 
 </section>
 
-<div id="resume-works">
-<section id="works">
-
- <h2>These are my projects</h2>
-
- <a href="https://ridvanceko.github.io/TriviaGame/" target="_blank">
-  <img src="./assets/images/my-works.jpg" width="300" height="300">
-  </a>
-
-  <a href="https://ridvanceko.github.io/GIPHY/" target="_blank">
-    <img  src="./assets/images/giphy.png" width="300" height="300">
-    </a>
-
- 
-</section>
-
-</div>
+  </div>
 
 
 
-<!-- open a section and add bootstrap modal in it  -->
 
+
+
+  
+  <!-- open a section and add bootstrap modal in it  -->
   <div id="footer">
 
     <!-- Footer -->
@@ -122,6 +140,29 @@
     <!-- Footer -->
   </div>
 
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 10 ;
+      document.documentElement.scrollTop = 10 ;
+    }
+  </script>
 
 
 </body>
