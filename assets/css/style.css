@@ -29,6 +29,7 @@ footer {
 
   h1{
     color: rgb(58, 58, 57);
+   
     
   }
 
@@ -88,6 +89,21 @@ section{
 .hover01 figure:hover img {
 	-webkit-transform: scale(1.3);
 	transform: scale(1.3);
+}
+
+.card{
+  margin: 33px;
+}
+
+img {
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 50%;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 150px; /* Set a small width */
+  
+}
+img:hover {
+  box-shadow: 0 0 1px 1px rgba(164, 169, 170, 0.5);
 }
 
 
